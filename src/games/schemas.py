@@ -1,7 +1,9 @@
-from pydantic import BaseModel, constr
+from pydantic import constr
+
+from src.schemas import SchemaModel
 
 
-class Game(BaseModel):
+class Game(SchemaModel):
     id: int
     title: constr(max_length=100)
     year: int

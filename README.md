@@ -11,7 +11,7 @@
 
 * Run application:
 
-  `pipenv run uvicorn main:app --app-dir=src`
+  `pipenv run uvicorn src.main:app`
 
 ## Contributing
 
@@ -25,9 +25,9 @@ Initial DB creation schema:
 create table games
 (
     id          integer PRIMARY KEY NOT NULL,
-    title       char(100) UNIQUE,
+    title       varchar(100) UNIQUE,
     year        integer,
-    url         char(100),
+    url         varchar(100),
     description text
 );
 ```
