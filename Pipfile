@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 fastapi = "~=0.93"
 uvicorn = "~=0.21"
+sqlalchemy = "~=2.0"
+psycopg2-binary = "~=2.9"
 
 [dev-packages]
 pytest = "~=7.2"
